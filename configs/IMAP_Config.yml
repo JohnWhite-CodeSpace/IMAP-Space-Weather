@@ -1,0 +1,9 @@
+IMAP_API:
+  BaseUrl: 'https://ialirt.imap-mission.com'
+  api_key: 'secret'
+  api_endpoints:
+    packet_data: '/ialirt-packet-query?'
+    log_data: '/ialirt-log-query?'
+
+Logger:
+  LogFilePath: '../logs/'
