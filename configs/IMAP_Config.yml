@@ -1,9 +1,22 @@
 IMAP_API:
   BaseUrl: 'https://ialirt.imap-mission.com'
   api_key: 'secret'
-  api_endpoints:
+  endpoint:
     packet_data: '/ialirt-packet-query?'
     log_data: '/ialirt-log-query?'
+    space_weather_data: '/space-weather?'
+    archive_data: '/ialirt-archive-query?'
+    download_data: '/ialirt-download/'
 
 Logger:
   LogFilePath: '../logs/'
+
+Data:
+  BaseDir: '../raw_data'
+  ArchivePath: '../raw_data/ARCHIVE'
+  InstrumentDirMapping:
+    codice: '../raw_data/CODICE'
+    glows: '../raw_data/GLOWS'
+    hit: '../raw_data/HIT'
+    mag: '../raw_data/MAG'
+    swe: '../raw_data/SWE'

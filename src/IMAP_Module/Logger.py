@@ -18,14 +18,14 @@ class Logger:
                 log = f'{self.object_name} {datetime.now()}: {object_response} \n {traceback}'
             else:
                 log = f'{self.object_name} {datetime.now()}: {object_response}'
-            print(log)
+            # print(log)
             self.saveLog(log)
         except Exception as ex:
             raise ex
 
     def saveLog(self, log: str):
         try:
-            print(f'{self.object_name} {datetime.now()}: {log}')
+            # print(f'{self.object_name} {datetime.now()}: {log}')
             with open(self.config['Logger']['LogFilePath']+self.filename, 'a') as log_file:
                 log_file.write(log + '\n')
         except Exception as ex:
