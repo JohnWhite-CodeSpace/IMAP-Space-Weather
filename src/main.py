@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     ####################################################################################################################
     ##### ARCHIVE DATA DOWNLOAD #####
-    archive_since_ok = DataLoader.getArchiveData(since="20260401")
+    archive_since_ok = DataLoader.getArchiveData(since="20260201")
     download_products(DataLoader, archive_since_ok, dir_name="All")
 
     print("Script Ended")
